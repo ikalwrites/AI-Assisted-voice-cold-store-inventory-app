@@ -1,0 +1,11 @@
+{
+  "name": "Paradise Fisheries - AI Voice Stockkeeper",
+  "description": "Commercial cold store voice stockkeeper and management cockpit for Paradise Fisheries featuring bilingual AI voice agents Kwame & Isaac, scalable cold chambers fleet manager, live log book, out-of-stock and spoilage inbox, and secure records vault.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

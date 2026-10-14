@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+  }
+  .glass-header {
+    background: linear-gradient(180deg, #386B52 0%, #29533E 100%);
+  }
+  .organic-shadow {
+    box-shadow: 0 24px 48px -18px rgba(41, 83, 62, 0.16);
+  }
+  .contact-shadow {
+    box-shadow: 0 20px 30px -10px rgba(35, 52, 42, 0.22);
+  }
+  .turntable-ring {
+    border: 1.5px solid rgba(66, 122, 91, 0.35);
+    border-radius: 9999px;
+    transform: rotateX(68deg);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media print {
+  aside,
+  nav,
+  header,
+  button,
+  .no-print,
+  #voice-assistant-fab,
+  .fixed,
+  .sticky {
+    display: none !important;
+  }
+
+  body, html {
+    background: #ffffff !important;
+    color: #111827 !important;
+    overflow: visible !important;
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #printable-logbook-document,
+  #printable-records-document {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10mm !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
+
